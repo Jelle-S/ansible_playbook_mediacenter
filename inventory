@@ -1,0 +1,6 @@
+[mediacenters]
+192.168.1.156
+
+[mediacenters:vars]
+ansible_user=pi
+

@@ -1,0 +1,10 @@
+---
+- hosts: mediacenters
+  become: true
+
+  vars_files:
+    - vars/plex.yml
+
+  roles:
+    - jelle_s.plex
+

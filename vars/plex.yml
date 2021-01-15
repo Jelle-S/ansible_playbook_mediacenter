@@ -1,0 +1,3 @@
+---
+plex_service_user: "pi"
+plex_service_group: "pi"
