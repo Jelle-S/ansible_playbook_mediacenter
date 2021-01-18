@@ -1,0 +1,7 @@
+#
+# Customize Plex's config
+#
+# Identify this as a service override
+[Service]
+Environment=TRANSMISSION_HOME=/etc/transmission-daemon
+User={{ transmission_service_user | default('debian-transmission') }}

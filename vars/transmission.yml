@@ -1,0 +1,26 @@
+---
+transmission_download_dir: "/media/pi/mediacenter/Done"
+transmission_download_queue_size: 10
+transmission_encryption: 2
+transmission_idle_seeding_limit: 1
+transmission_idle_seeding_limit_enabled: true
+transmission_incomplete_dir: "/media/pi/mediacenter/Downloading"
+transmission_incomplete_dir_enabled: true
+transmission_ratio_limit: 0
+transmission_ratio_limit_enabled: true
+transmission_rpc_authentication_required: true
+transmission_rpc_whitelist_enabled: false
+transmission_rpc_username: "pi"
+transmission_rpc_password: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          61666162323461643861313763323765383661396330356666653261373934366632623934376437
+          6539616134346262333435336566666436316234666664660a396662303062303239656561613135
+          36373335323630396164363638383832353162656139343337393638313237363238643630666434
+          6633663336623831650a313134386361626330623262633737383561333637343239643536323563
+          6365
+transmission_speed_limit_up: 5
+transmission_speed_limit_up_enabled: true
+transmission_upload_limit: 5
+transmission_upload_limit_enabled: true
+transmission_service_user: "pi"
+transmission_service_group: "pi"

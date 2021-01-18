@@ -3,8 +3,50 @@
   become: true
 
   vars_files:
+    - vars/external_drives.yml
     - vars/plex.yml
+    - vars/transmission.yml
+
+  handlers:
+    - import_tasks: handlers/main.yml
+
+  pre_tasks:
+    - name: "Mount external drives"
+      ansible.posix.mount:
+        path: "{{ item.path }}"
+        src: "{{ item.src }}"
+        fstype: "{{ item.fstype }}"
+        opts: "{{ item.opts }}"
+        state: "{{ item.state }}"
+        dump: "{{ item.dump }}"
+        passno: "{{ item.passno }}"
+      loop: "{{ external_drive_mounts }}"
 
   roles:
     - jelle_s.plex
+    - danielkoster.transmission-daemon
 
+  post_tasks:
+    - name: Create the Transmission config directory
+      file:
+        path: /etc/systemd/system/transmission-daemon.service.d
+        state: directory
+        owner: root
+        group: root
+
+    - name: Configure Transmission.
+      template:
+        src: transmission-daemon-service-override.conf.j2
+        dest: /etc/systemd/system/transmission-daemon.service.d/override.conf
+        owner: root
+        group: root
+        mode: 0644
+      notify:
+        - ensure transmission-daemon permissions
+        - restart transmission-daemon
+
+    - name: Ensure Transmission autostarts.
+      service:
+        name: transmission-daemon
+        enabled: true
+      notify: restart transmission-daemon

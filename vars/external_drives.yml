@@ -1,0 +1,9 @@
+---
+external_drive_mounts:
+  - path: "/media/pi/mediacenter"
+    src: "UUID=69d1e89f-7238-468d-864e-4afe02a5b593"
+    fstype: "ext4"
+    opts: "defaults,nofail"
+    state: "mounted"
+    dump: 0
+    passno: 0
