@@ -6,6 +6,7 @@
     - vars/external_drives.yml
     - vars/plex.yml
     - vars/transmission.yml
+    - vars/pymedusa.yml
 
   handlers:
     - import_tasks: handlers/main.yml
@@ -25,6 +26,7 @@
   roles:
     - jelle_s.plex
     - danielkoster.transmission-daemon
+    - jelle_s.pymedusa
 
   post_tasks:
     - name: Create the Transmission config directory

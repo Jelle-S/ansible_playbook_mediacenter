@@ -1,0 +1,236 @@
+---
+pymedusa_directory: "/home/pi/.medusa"
+pymedusa_service_user: "pi"
+pymedusa_service_group: "pi"
+pymedusa_options:
+  # General
+  - { option: "use_torrents", value: 1, section: "General" }
+  - { option: "torrent_method", value: "transmission", section: "General" }
+  - { option: "remove_from_client", value: 1, section: "General" }
+  - { option: "showlist_default", value: "series,", section: "General" }
+  - { option: "version_notify", value: 1, section: "General" }
+  - { option: "auto_update", value: 1, section: "General" }
+  - { option: "notify_on_update", value: 1, section: "General" }
+  - { option: "naming_strip_year", value: 0, section: "General" }
+  - { option: "add_title_with_year", value: 0, section: "General" }
+  - { option: "naming_pattern", value: "Season %0S/S%0SE%0E - %EN", section: "General" }
+  - { option: "indexerDefaultLang", value: "en", section: "General" }
+  - { option: "metadata_kodi", value: "1, 1, 1, 1, 1, 1, 1, 1, 1, 1", section: "General" }
+  - { option: "root_dirs", value: "0, /media/pi/mediacenter", section: "General" }
+  - { option: "tv_download_dir", value: "/media/pi/mediacenter/Done", section: "General" }
+  - { option: "keep_processed_dir", value: 1, section: "General" }
+  - { option: "process_method", value: "move", section: "General" }
+  - { option: "del_rar_contents", value: 1, section: "General" }
+  - { option: "move_associated_files", value: 0, section: "General" }
+  - { option: "unpack", value: 1, section: "General" }
+  - { option: "rename_episodes", value: 1, section: "General" }
+  - { option: "create_missing_show_dirs", value: 1, section: "General" }
+  - { option: "fallback_plex_enable", value: 1, section: "General" }
+  - { option: "fallback_plex_notifications", value: 1, section: "General" }
+  - { option: "fallback_plex_timeout", value: 3, section: "General" }
+  # ANIDEX
+  - { option: 'anidex', value: '1', section: 'ANIDEX' }
+  - { option: 'anidex_name', value: 'AniDex', section: 'ANIDEX' }
+  - { option: 'anidex_url', value: 'https://anidex.info', section: 'ANIDEX' }
+  - { option: 'anidex_search_mode', value: 'eponly', section: 'ANIDEX' }
+  - { option: 'anidex_search_fallback', value: '1', section: 'ANIDEX' }
+  - { option: 'anidex_enable_daily', value: '1', section: 'ANIDEX' }
+  - { option: 'anidex_enable_backlog', value: '1', section: 'ANIDEX' }
+  - { option: 'anidex_enable_manualsearch', value: '1', section: 'ANIDEX' }
+  - { option: 'anidex_enable_search_delay', value: '0', section: 'ANIDEX' }
+  - { option: 'anidex_search_delay', value: '480', section: 'ANIDEX' }
+  - { option: 'anidex_ratio', value: '""', section: 'ANIDEX' }
+  - { option: 'anidex_minseed', value: '1', section: 'ANIDEX' }
+  - { option: 'anidex_minleech', value: '0', section: 'ANIDEX' }
+  # BTDB
+  - { option: 'btdb', value: '1', section: 'BTDB' }
+  - { option: 'btdb_name', value: 'BTDB', section: 'BTDB' }
+  - { option: 'btdb_url', value: 'https://btdb.eu', section: 'BTDB' }
+  - { option: 'btdb_search_mode', value: 'eponly', section: 'BTDB' }
+  - { option: 'btdb_search_fallback', value: '1', section: 'BTDB' }
+  - { option: 'btdb_enable_daily', value: '1', section: 'BTDB' }
+  - { option: 'btdb_enable_backlog', value: '1', section: 'BTDB' }
+  - { option: 'btdb_enable_manualsearch', value: '1', section: 'BTDB' }
+  - { option: 'btdb_enable_search_delay', value: '0', section: 'BTDB' }
+  - { option: 'btdb_search_delay', value: '480', section: 'BTDB' }
+  - { option: 'btdb_ratio', value: '""', section: 'BTDB' }
+  - { option: 'btdb_minseed', value: '1', section: 'BTDB' }
+  - { option: 'btdb_minleech', value: '0', section: 'BTDB' }
+  - { option: 'btdb_cookies', value: '""', section: 'BTDB' }
+  # LIMETORRENTS
+  - { option: 'limetorrents', value: '1', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_name', value: 'LimeTorrents', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_url', value: 'https://www.limetorrents.info', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_search_mode', value: 'eponly', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_search_fallback', value: '1', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_enable_daily', value: '1', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_enable_backlog', value: '1', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_enable_manualsearch', value: '1', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_enable_search_delay', value: '0', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_search_delay', value: '480', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_confirmed', value: '1', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_ratio', value: '""', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_minseed', value: '1', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_minleech', value: '0', section: 'LIMETORRENTS' }
+  - { option: 'limetorrents_cookies', value: '""', section: 'LIMETORRENTS' }
+  # SHANAPROJECT
+  - { option: 'shanaproject', value: '1', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_name', value: 'ShanaProject', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_url', value: 'https://www.shanaproject.com/', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_search_mode', value: 'eponly', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_search_fallback', value: '1', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_enable_daily', value: '1', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_enable_backlog', value: '1', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_enable_manualsearch', value: '1', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_enable_search_delay', value: '0', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_search_delay', value: '480', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_ratio', value: '""', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_minseed', value: '1', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_minleech', value: '0', section: 'SHANAPROJECT' }
+  - { option: 'shanaproject_cookies', value: '""', section: 'SHANAPROJECT' }
+  # THEPIRATEBAY
+  - { option: 'thepiratebay', value: '1', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_name', value: 'ThePirateBay', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_url', value: 'https://pirateproxy.earth', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_search_mode', value: 'eponly', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_search_fallback', value: '1', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_enable_daily', value: '1', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_enable_backlog', value: '1', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_enable_manualsearch', value: '1', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_enable_search_delay', value: '0', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_search_delay', value: '480', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_custom_url', value: '""', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_confirmed', value: '1', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_ratio', value: '""', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_minseed', value: '1', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_minleech', value: '0', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_cookies', value: '""', section: 'THEPIRATEBAY' }
+  # TOKYOTOSHOKAN
+  - { option: 'tokyotoshokan', value: '1', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_name', value: 'TokyoToshokan', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_url', value: 'http://tokyotosho.info/', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_search_mode', value: 'eponly', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_search_fallback', value: '1', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_enable_daily', value: '1', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_enable_backlog', value: '1', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_enable_manualsearch', value: '1', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_enable_search_delay', value: '0', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_search_delay', value: '480', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_ratio', value: '""', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_minseed', value: '1', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_minleech', value: '0', section: 'TOKYOTOSHOKAN' }
+  - { option: 'tokyotoshokan_cookies', value: '""', section: 'TOKYOTOSHOKAN' }
+  # ZOOQLE
+  - { option: 'zooqle', value: '1', section: 'ZOOQLE' }
+  - { option: 'zooqle_name', value: 'Zooqle', section: 'ZOOQLE' }
+  - { option: 'zooqle_url', value: 'https://zooqle.com', section: 'ZOOQLE' }
+  - { option: 'zooqle_search_mode', value: 'eponly', section: 'ZOOQLE' }
+  - { option: 'zooqle_search_fallback', value: '1', section: 'ZOOQLE' }
+  - { option: 'zooqle_enable_daily', value: '1', section: 'ZOOQLE' }
+  - { option: 'zooqle_enable_backlog', value: '1', section: 'ZOOQLE' }
+  - { option: 'zooqle_enable_manualsearch', value: '1', section: 'ZOOQLE' }
+  - { option: 'zooqle_enable_search_delay', value: '0', section: 'ZOOQLE' }
+  - { option: 'zooqle_search_delay', value: '480', section: 'ZOOQLE' }
+  - { option: 'zooqle_ratio', value: '""', section: 'ZOOQLE' }
+  - { option: 'zooqle_minseed', value: '1', section: 'ZOOQLE' }
+  - { option: 'zooqle_minleech', value: '0', section: 'ZOOQLE' }
+  - { option: 'zooqle_cookies', value: '""', section: 'ZOOQLE' }
+  # EZTV
+  - { option: 'eztv', value: '1', section: 'EZTV' }
+  - { option: 'eztv_name', value: 'Eztv', section: 'EZTV' }
+  - { option: 'eztv_url', value: 'https://eztv.re', section: 'EZTV' }
+  - { option: 'eztv_search_mode', value: 'eponly', section: 'EZTV' }
+  - { option: 'eztv_search_fallback', value: '1', section: 'EZTV' }
+  - { option: 'eztv_enable_daily', value: '1', section: 'EZTV' }
+  - { option: 'eztv_enable_backlog', value: '1', section: 'EZTV' }
+  - { option: 'eztv_enable_manualsearch', value: '1', section: 'EZTV' }
+  - { option: 'eztv_enable_search_delay', value: '0', section: 'EZTV' }
+  - { option: 'eztv_search_delay', value: '480', section: 'EZTV' }
+  - { option: 'eztv_ratio', value: '""', section: 'EZTV' }
+  - { option: 'eztv_minseed', value: '1', section: 'EZTV' }
+  - { option: 'eztv_minleech', value: '0', section: 'EZTV' }
+  - { option: 'eztv_cookies', value: '""', section: 'EZTV' }
+  # RARBG
+  - { option: 'rarbg', value: '1', section: 'RARBG' }
+  - { option: 'rarbg_name', value: 'Rarbg', section: 'RARBG' }
+  - { option: 'rarbg_url', value: 'https://rarbg.com', section: 'RARBG' }
+  - { option: 'rarbg_search_mode', value: 'eponly', section: 'RARBG' }
+  - { option: 'rarbg_search_fallback', value: '1', section: 'RARBG' }
+  - { option: 'rarbg_enable_daily', value: '1', section: 'RARBG' }
+  - { option: 'rarbg_enable_backlog', value: '1', section: 'RARBG' }
+  - { option: 'rarbg_enable_manualsearch', value: '1', section: 'RARBG' }
+  - { option: 'rarbg_enable_search_delay', value: '0', section: 'RARBG' }
+  - { option: 'rarbg_search_delay', value: '480', section: 'RARBG' }
+  - { option: 'rarbg_ranked', value: '1', section: 'RARBG' }
+  - { option: 'rarbg_sorting', value: 'seeders', section: 'RARBG' }
+  - { option: 'rarbg_ratio', value: '""', section: 'RARBG' }
+  - { option: 'rarbg_minseed', value: '1', section: 'RARBG' }
+  - { option: 'rarbg_minleech', value: '0', section: 'RARBG' }
+  - { option: 'rarbg_cookies', value: '""', section: 'RARBG' }
+  # NYAA
+  - { option: 'nyaa', value: '1', section: 'NYAA' }
+  - { option: 'nyaa_name', value: 'Nyaa', section: 'NYAA' }
+  - { option: 'nyaa_url', value: 'https://nyaa.si', section: 'NYAA' }
+  - { option: 'nyaa_search_mode', value: 'eponly', section: 'NYAA' }
+  - { option: 'nyaa_search_fallback', value: '1', section: 'NYAA' }
+  - { option: 'nyaa_enable_daily', value: '1', section: 'NYAA' }
+  - { option: 'nyaa_enable_backlog', value: '1', section: 'NYAA' }
+  - { option: 'nyaa_enable_manualsearch', value: '1', section: 'NYAA' }
+  - { option: 'nyaa_enable_search_delay', value: '0', section: 'NYAA' }
+  - { option: 'nyaa_search_delay', value: '480', section: 'NYAA' }
+  - { option: 'nyaa_confirmed', value: '1', section: 'NYAA' }
+  - { option: 'nyaa_ratio', value: '""', section: 'NYAA' }
+  - { option: 'nyaa_minseed', value: '1', section: 'NYAA' }
+  - { option: 'nyaa_minleech', value: '0', section: 'NYAA' }
+  - { option: 'nyaa_cookies', value: '""', section: 'NYAA' }
+  # TORRENTZ2
+  - { option: 'torrentz2', value: '1', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_name', value: 'Torrentz2', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_url', value: 'https://torrentz2.eu/', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_search_mode', value: 'eponly', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_search_fallback', value: '1', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_enable_daily', value: '1', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_enable_backlog', value: '1', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_enable_manualsearch', value: '1', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_enable_search_delay', value: '0', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_search_delay', value: '480', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_ratio', value: '""', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_minseed', value: '1', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_minleech', value: '0', section: 'TORRENTZ2' }
+  - { option: 'torrentz2_cookies', value: '""', section: 'TORRENTZ2' }
+  # TORRENT
+  - { option: 'torrent_username', value: '{{ transmission_rpc_username }}', section: 'TORRENT' }
+  - { option: 'torrent_password', value: '{{ transmission_rpc_password }}', section: 'TORRENT' }
+  - { option: 'torrent_host', value: '{{ inventory_hostname }}:9091', section: 'TORRENT' }
+  - { option: 'torrent_path', value: '{{ transmission_download_dir }}', section: 'TORRENT' }
+  - { option: 'torrent_seed_time', value: '0', section: 'TORRENT' }
+  - { option: 'torrent_paused', value: '0', section: 'TORRENT' }
+  - { option: 'torrent_high_bandwidth', value: '0', section: 'TORRENT' }
+  - { option: 'torrent_label', value: '""', section: 'TORRENT' }
+  - { option: 'torrent_label_anime', value: '""', section: 'TORRENT' }
+  - { option: 'torrent_verify_cert', value: '0', section: 'TORRENT' }
+  - { option: 'torrent_rpcurl', value: 'transmission', section: 'TORRENT' }
+  - { option: 'torrent_auth_type', value: '""', section: 'TORRENT' }
+  - { option: 'torrent_seed_location', value: '""', section: 'TORRENT' }
+  # Plex
+  - { option: 'use_plex_server', value: '1', section: 'Plex' }
+  - { option: 'plex_notify_onsnatch', value: '0', section: 'Plex' }
+  - { option: 'plex_notify_ondownload', value: '0', section: 'Plex' }
+  - { option: 'plex_notify_onsubtitledownload', value: '0', section: 'Plex' }
+  - { option: 'plex_update_library', value: '1', section: 'Plex' }
+  - { option: 'plex_server_host', value: '', section: 'Plex' }
+  - { option: 'plex_server_token', value: '""', section: 'Plex' }
+  - { option: 'plex_client_host', value: ',', section: 'Plex' }
+  - { option: 'plex_server_username', value: '""', section: 'Plex' }
+  - { option: 'plex_server_password', value: '""', section: 'Plex' }
+  - { option: 'use_plex_client', value: '0', section: 'Plex' }
+  - { option: 'plex_client_username', value: '""', section: 'Plex' }
+  - { option: 'plex_client_password', value: '""', section: 'Plex' }
+  - { option: 'plex_server_https', value: '0', section: 'Plex' }
+  # Subtitles
+  - { option: 'use_subtitles', value: '1', section: 'Subtitles' }
+  - { option: 'subtitles_erase_cache', value: '1', section: 'Subtitles' }
+  - { option: 'subtitles_languages', value: 'dut, eng', section: 'Subtitles' }
+  - { option: 'SUBTITLES_SERVICES_LIST', value: 'addic7ed, argenteam, legendastv, napiprojekt, opensubtitles, opensubtitlesvip, podnapisi, shooter, subtitulamos, thesubdb, tvsubtitles, wizdom', section: 'Subtitles' }
+  - { option: 'SUBTITLES_SERVICES_ENABLED', value: '0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1', section: 'Subtitles' }
+  - { option: 'subtitles_keep_only_wanted', value: '1', section: 'Subtitles' }

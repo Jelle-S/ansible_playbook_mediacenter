@@ -1,2 +1,4 @@
 ---
+- name: danielkoster.transmission-daemon
 - name: jelle_s.plex
+- name: jelle_s.pymedusa
