@@ -7,6 +7,7 @@
     - vars/plex.yml
     - vars/transmission.yml
     - vars/pymedusa.yml
+    - vars/samba.yml
 
   handlers:
     - import_tasks: handlers/main.yml
@@ -27,6 +28,7 @@
     - jelle_s.plex
     - danielkoster.transmission-daemon
     - jelle_s.pymedusa
+    - bertvv.samba
 
   post_tasks:
     - name: Create the Transmission config directory

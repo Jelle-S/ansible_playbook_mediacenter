@@ -1,0 +1,28 @@
+---
+samba_netbios_name: MEDIACENTER
+samba_server_string: 'Welcome to the mediacenter file server'
+samba_create_varwww_symlinks: true
+samba_log: /var/log/samba.log
+samba_log_size: 60000
+samba_log_level: '3 passdb:5 auth:10 winbind:2 '
+samba_map_to_guest: Never
+samba_users:
+  - name: pi
+    password: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          35653730393234353564356230303536376335376365653566316430363231626637646366616132
+          3361303165353437666362626165343662633533396237620a376366633435333836613163623334
+          39613165663037383930656265626138373661643535343733636335623564636430623563623932
+          6466373937326538620a626536313832306639653934303665653563633631623166613235303133
+          3261
+
+samba_shares_root: /media/pi
+samba_shares:
+  - name: mediacenter
+    valid_users: pi
+    write_list: pi
+    owner: pi
+    group: pi
+    browseable: 'yes'
+    public: 'no'
+    guest_ok: 'no'
