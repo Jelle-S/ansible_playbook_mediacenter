@@ -91,7 +91,7 @@ pymedusa_options:
   # THEPIRATEBAY
   - { option: 'thepiratebay', value: '1', section: 'THEPIRATEBAY' }
   - { option: 'thepiratebay_name', value: 'ThePirateBay', section: 'THEPIRATEBAY' }
-  - { option: 'thepiratebay_url', value: 'https://pirateproxy.earth', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_url', value: 'https://piratebay.org', section: 'THEPIRATEBAY' }
   - { option: 'thepiratebay_search_mode', value: 'eponly', section: 'THEPIRATEBAY' }
   - { option: 'thepiratebay_search_fallback', value: '1', section: 'THEPIRATEBAY' }
   - { option: 'thepiratebay_enable_daily', value: '1', section: 'THEPIRATEBAY' }
@@ -99,7 +99,7 @@ pymedusa_options:
   - { option: 'thepiratebay_enable_manualsearch', value: '1', section: 'THEPIRATEBAY' }
   - { option: 'thepiratebay_enable_search_delay', value: '0', section: 'THEPIRATEBAY' }
   - { option: 'thepiratebay_search_delay', value: '480', section: 'THEPIRATEBAY' }
-  - { option: 'thepiratebay_custom_url', value: '""', section: 'THEPIRATEBAY' }
+  - { option: 'thepiratebay_custom_url', value: 'https://pirateproxy.earth/', section: 'THEPIRATEBAY' }
   - { option: 'thepiratebay_confirmed', value: '1', section: 'THEPIRATEBAY' }
   - { option: 'thepiratebay_ratio', value: '""', section: 'THEPIRATEBAY' }
   - { option: 'thepiratebay_minseed', value: '1', section: 'THEPIRATEBAY' }
