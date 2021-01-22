@@ -218,15 +218,6 @@ pymedusa_options:
   - { option: 'plex_notify_ondownload', value: '0', section: 'Plex' }
   - { option: 'plex_notify_onsubtitledownload', value: '0', section: 'Plex' }
   - { option: 'plex_update_library', value: '1', section: 'Plex' }
-  - { option: 'plex_server_host', value: '', section: 'Plex' }
-  - { option: 'plex_server_token', value: '""', section: 'Plex' }
-  - { option: 'plex_client_host', value: ',', section: 'Plex' }
-  - { option: 'plex_server_username', value: '""', section: 'Plex' }
-  - { option: 'plex_server_password', value: '""', section: 'Plex' }
-  - { option: 'use_plex_client', value: '0', section: 'Plex' }
-  - { option: 'plex_client_username', value: '""', section: 'Plex' }
-  - { option: 'plex_client_password', value: '""', section: 'Plex' }
-  - { option: 'plex_server_https', value: '0', section: 'Plex' }
   # Subtitles
   - { option: 'use_subtitles', value: '1', section: 'Subtitles' }
   - { option: 'subtitles_erase_cache', value: '1', section: 'Subtitles' }
