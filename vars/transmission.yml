@@ -22,5 +22,5 @@ transmission_speed_limit_up: 5
 transmission_speed_limit_up_enabled: true
 transmission_upload_limit: 5
 transmission_upload_limit_enabled: true
-transmission_service_user: "pi"
-transmission_service_group: "pi"
+transmission_user: "pi"
+transmission_group: "pi"
